@@ -1,3 +1,17 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 @import "_variables";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    color: $text-default;
+}
