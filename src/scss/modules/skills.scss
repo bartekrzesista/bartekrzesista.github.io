@@ -1,0 +1,60 @@
+.skills {
+    padding: 16px;
+    background-color: $blue;
+    color: $white;
+
+    &__header {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        margin-top: 64px;
+    }
+
+    &__segment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 64px;
+    }
+
+    &__emoji {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    &__list-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 44px;
+        margin-top: 16px;
+    }
+
+    &__list {
+        color: $blue-light;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 12px;
+        width: 264px;
+        list-style-position: outside;
+        margin-top: 24px;
+
+        &-item {
+            padding-left: 12px;
+        }
+
+        &--working {
+            list-style-image: url("../assets/img/green-tick.svg");
+        }
+
+        &--something {
+            list-style-image: url("../assets/img/blue-light-tick.svg");
+        }
+
+        &--want {
+            list-style-image: url("../assets/img/bullet.svg");
+            margin-bottom: 72px;
+        }
+    }
+}
