@@ -35,25 +35,30 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        padding-left: 12px;
         width: 264px;
-        list-style-position: outside;
+        list-style-type: none;
         margin-top: 24px;
 
         &-item {
-            padding-left: 12px;
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            padding-left: 24px;
         }
 
-        &--working {
-            list-style-image: url("../assets/img/green-tick.svg");
+        &--working li {
+            background-image: url("../assets/img/green-tick.svg");
         }
 
-        &--something {
-            list-style-image: url("../assets/img/blue-light-tick.svg");
+        &--something li{
+            background-image: url("../assets/img/blue-light-tick.svg");
+        }
+
+        &--want li{
+            background-image: url("../assets/img/bullet.svg");
+            background-position: 2% 50%;
         }
 
         &--want {
-            list-style-image: url("../assets/img/bullet.svg");
             margin-bottom: 72px;
         }
     }
