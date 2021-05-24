@@ -1,0 +1,89 @@
+.projects {
+  padding: 16px;
+
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  &__description {
+    color: $text-default;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+
+.repo {
+    background-color: $repo-bg;
+    border-radius: 16px;
+    margin-top: 46px;
+    min-width: 284px;
+
+    &__top {
+        padding: 16px;
+        background-color: $repo-top;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 16px;
+
+        &-circle {
+            background-color: $grey-cirle;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            padding: 0px;
+        }
+    }
+
+    &__content {
+        padding: 24px 16px;
+    }
+
+    &__list {
+        margin: 24px 0;
+        list-style: none;
+        padding: 0;
+
+        &-item {
+            font-size: 13px;
+            line-height: 24px;
+        }
+    }
+
+    &__label {
+        color: $repo-label;
+        display: inline-block;
+        text-align: end;
+        width: 102px;
+        margin-right: 4px;
+    }
+
+    &__value {
+        &--name {
+            color: $white;
+            font-weight: bold;
+        }
+
+        &--description {
+            color: $repo-description;
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+
+        &--link {
+            color: $repo-label;
+        }
+
+        &--link a{
+            color: $repo-link;
+        }
+    }
+}
