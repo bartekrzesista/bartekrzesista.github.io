@@ -4,11 +4,16 @@
 
     &__header {
         @include section-h2($text-dark);
+        margin: 0;
     }
 
     &__description {
         @include section-description($text-default);
-        margin-top: 32px;
+        margin: 32px 0 0 0;
+    }
+
+    &__links {
+        margin-top: 56px;
     }
 
     &__mail {
