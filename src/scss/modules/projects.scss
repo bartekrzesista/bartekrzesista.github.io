@@ -1,21 +1,24 @@
 .projects {
-  padding: 16px;
+    padding: 64px 16px 88px 16px;
 
   &__header {
       @include section-h2($text-dark);
-      margin-top: 64px;
+      margin: 0;
   }
 
   &__description {
       @include section-description($text-default);
-      margin-top: 32px;
+      margin: 32px 0 0 0;
+  }
+
+  &__grid {
+      margin-top: 46px;
   }
 }
 
 .repo {
     background-color: $repo-bg;
     border-radius: 16px;
-    margin-top: 46px;
     min-width: 284px;
 
     &__top {
