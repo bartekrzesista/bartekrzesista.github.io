@@ -1,9 +1,9 @@
 .hero {
-    padding: 16px;
+    padding: 82px 16px 88px 16px;
     
     &__img-container {
         width: 212px;
-        margin: 82px auto 0 auto;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
     }
@@ -26,7 +26,7 @@
         font-weight: bold;
         line-height: 32px;
         text-align: center;
-        margin-top: 24px;
+        margin: 24px 0 0 0;
 
         &-special {
             color: $blue;
@@ -35,7 +35,7 @@
 
     &__description {
         @include section-description($text-default);
-        margin-top: 16px;
+        margin: 16px 0 0 0;
     }
 
     &__link {
@@ -46,6 +46,6 @@
 
     &__contact {
         @include mail-link;
-        margin: 48px auto 72px auto;
+        margin: 48px auto 0 auto;
     }
 }
