@@ -1,0 +1,30 @@
+@mixin mail-link {
+    display: block;
+    width: 278px;
+    height: 48px;
+    background-color: $link;
+    color: $white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 24px;
+    border-radius: 64px;
+}
+
+@mixin section-h2($color){
+    color: $color;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+@mixin section-description($color) {
+    color: $color;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+}

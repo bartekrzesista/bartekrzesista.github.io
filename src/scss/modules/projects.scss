@@ -2,20 +2,13 @@
   padding: 16px;
 
   &__header {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    text-align: center;
-    margin-top: 64px;
+      @include section-h2($text-dark);
+      margin-top: 64px;
   }
 
   &__description {
-    color: $text-default;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-    margin-top: 32px;
+      @include section-description($text-default);
+      margin-top: 32px;
   }
 }
 
