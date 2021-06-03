@@ -13,6 +13,9 @@
 
   &__grid {
       margin-top: 46px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 24px;
   }
 }
 
