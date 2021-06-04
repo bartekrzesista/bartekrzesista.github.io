@@ -16,13 +16,14 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 24px;
+      justify-items: center;
   }
 }
 
 .repo {
     background-color: $repo-bg;
     border-radius: 16px;
-    min-width: 284px;
+    min-width: 100%;
 
     &__top {
         padding: 16px;
@@ -87,6 +88,14 @@
 
         &-link a{
             color: $repo-link;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .projects {
+        &__grid {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
