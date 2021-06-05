@@ -28,3 +28,13 @@
     line-height: 32px;
     text-align: center;
 }
+
+@mixin section-h2-desktop() {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+@mixin section-description-desktop() {
+    font-size: 20px;
+    line-height: 40px;
+}
