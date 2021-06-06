@@ -12,11 +12,10 @@
   }
 
   &__grid {
-      margin-top: 46px;
+      margin: 46px auto 0 auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 24px;
-      justify-items: center;
   }
 }
 
@@ -24,6 +23,8 @@
     background-color: $repo-bg;
     border-radius: 16px;
     min-width: 100%;
+    min-height: 320px;
+    overflow: hidden;
 
     &__top {
         padding: 16px;
@@ -58,6 +59,7 @@
             display: grid;
             grid-template-columns: 102px 1fr;
             grid-gap: 4px;
+            margin-bottom: 8px;
         }
 
         &-description {
@@ -92,10 +94,42 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .projects {
         &__grid {
             grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .projects {
+        padding: 80px 32px 176px 32px;
+
+        &__header {
+            @include section-h2-desktop;
+        }
+      
+        &__description {
+            @include section-description-desktop;
+            margin: 40px 0 0 0;
+        }
+
+        &__grid {
+            max-width: 1184px;
+            margin-top: 128px;
+        }
+    }
+
+    .repo {
+        &__content {
+            padding: 20px 48px 34px 48px;
+        }
+
+        &__list {
+            &-item {
+                font-size: 16px;
+            }
         }
     }
 }
