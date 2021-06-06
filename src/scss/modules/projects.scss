@@ -13,6 +13,7 @@
 
   &__grid {
       margin: 46px auto 0 auto;
+      max-width: 500px;
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 24px;
@@ -22,7 +23,7 @@
 .repo {
     background-color: $repo-bg;
     border-radius: 16px;
-    min-width: 100%;
+    width: 100%;
     min-height: 320px;
     overflow: hidden;
 
@@ -97,6 +98,7 @@
 @media (min-width: $tablet) {
     .projects {
         &__grid {
+            max-width: 100%;
             grid-template-columns: 1fr 1fr;
         }
     }

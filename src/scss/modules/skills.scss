@@ -61,7 +61,7 @@
 
 @media (min-width: $desktop) {
     .skills {
-        padding: 80px 32px 176px 32px;
+        padding: 80px 16px 176px 16px;
 
         &__header {
             @include section-h2-desktop;
@@ -77,6 +77,12 @@
 
         &__segment {
             margin-top: 128px;
+        }
+
+        &__list {
+            &-item {
+                margin: 0 0 16px 24px;
+            }
         }
     }
 }
