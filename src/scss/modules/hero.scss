@@ -60,6 +60,7 @@
 @media (min-width: $desktop) {
     .hero {
         padding: 106px 16px 176px 16px;
+        max-width: 840px;
 
         &__img-container {
             position: relative;
@@ -97,21 +98,22 @@
         &__header {
             font-size: 32px;
             line-height: 40px;
-            margin: 48px 0 0 0;
+            max-width: 700px;
+            margin: 48px auto 0 auto;
             position: relative;
 
             &::before {
                 content: url('../assets/img/left-brace.svg');
                 position: absolute;
                 top: -10px;
-                left: -100px;
+                left: -125px;
             }
 
             &::after {
                 content: url('../assets/img/right-brace.svg');
                 position: absolute;
                 top: -10px;
-                right: -100px;
+                right: -125px;
             }
         }
 
