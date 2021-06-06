@@ -58,3 +58,25 @@
         }
     }
 }
+
+@media (min-width: $desktop) {
+    .skills {
+        padding: 80px 32px 176px 32px;
+
+        &__header {
+            @include section-h2-desktop;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 24px;
+            max-width: 1184px;
+            margin: 0 auto;
+        }
+
+        &__segment {
+            margin-top: 128px;
+        }
+    }
+}
