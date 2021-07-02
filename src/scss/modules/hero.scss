@@ -95,6 +95,24 @@
             display: flex;
         }
 
+        @keyframes wave {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            50% {
+                transform: rotate(30deg);
+            }
+
+            100% {
+                transform: rotate(-10deg);
+            }
+        }
+
+        &__hand {
+            animation: wave 1.5s ease-in-out infinite;
+        }
+
         &__header {
             font-size: 32px;
             line-height: 40px;
