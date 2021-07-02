@@ -32,10 +32,11 @@
         height: 48px;
         display: inline-block;
         border-radius: 50%;
+        margin-right: 24px;
     }
 
-    &__container:first-of-type {
-        margin-right: 24px;
+    &__container:last-of-type {
+        margin: 0;
     }
 
     &__icon {
@@ -58,13 +59,13 @@
 
         &__links {
             margin: 128px auto 0 auto;
-            width: 520px;
+            width: 580px;
             display: flex;
             justify-content: space-between;
         }
 
         &__mail {
-            margin: 0;
+            margin: 0 0 0 110px;
         }
     }
 }
