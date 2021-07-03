@@ -1,4 +1,4 @@
-![cover](https://bartekrzesista.github.io/img/og-image.png)
+![cover](https://bartekrzesista.github.io/og-image.png)
 
 # Portfolio
 
